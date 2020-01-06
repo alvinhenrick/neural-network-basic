@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Neural Network Basics</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h4>Linear Regression</h4>
+            <img class="plain" src="images/linear_regression_1.png"/>
+        </section>
+        <section>
+            <h4>Multivariate Regression</h4>
+            <img class="plain" src="images/multivariate_regression_2.png"/>
+        </section>
+        <section>
+            <h4>Logistic Regression</h4>
+            <img class="plain" src="images/logistic_regression_3.png"/>
+        </section>
+        <section>
+            <h4>Neuron</h4>
+            <img class="plain" src="images/neuron.png"/>
+        </section>
+        <section>
+            <h4>Activation Functions</h4>
+            <img class="plain" src="images/activation_functions.png"/>
+        </section>
+        <section>
+            <h4>The Neuron</h4>
+            <img class="plain" src="images/neuron_fig1.png"/>
+        </section>
+        <section>
+            <h4>The Weights</h4>
+            <img class="plain" src="images/neuron_fig2.png"/>
+        </section>
+        <section>
+            <h4>What happens inside Neuron ?</h4>
+            <img class="plain" src="images/neuron_step_0.png"/>
+        </section>
+        <section>
+            <h4>Step 1</h4>
+            <img class="plain" src="images/neuron_step_1.png"/>
+        </section>
+        <section>
+            <h4>Step 2</h4>
+            <img class="plain" src="images/neuron_step_2.png"/>
+        </section>
+        <section>
+            <h4>Step 3</h4>
+            <img class="plain" src="images/neuron_step_3.png"/>
+        </section>
+        <section>
+            <h4>Fully Connected Layers</h4>
+            <img class="plain" src="images/nn_fully_connected.png"/>
+        </section>
+        <section>
+            <h4>Multiple Hidden Layers and Curse of Dimensions</h4>
+            <img class="plain" src="images/neuron_step_4.png"/>
+        </section>
+        <section>
+            <h4>Gradient Descent</h4>
+            <img class="plain" src="images/gradient_descent_step.png"/>
+        </section>
+        <section>
+            <h4>Stochastic Gradient Descent</h4>
+            <ul>
+                <li>Batch : Use whole dataset at each update</li>
+                <li>Stochastic : Use 1 sample at each update</li>
+                <li>Mini-batch : Use N samples at each update</li>
+            </ul>
+        </section>
+        <section>
+            <h4>Backpropagation</h4>
+            <img class="plain" src="images/backpropagation_step.png"/>
+        </section>
+        <section>
+            <h4>Important Links</h4>
+            <ul>
+                <li>
+                    <a href="https://www.analyticsvidhya.com/blog/2017/10/fundamentals-deep-learning-activation-functions-when-to-use-them/">Activation
+                        Functions</a>
+                </li>
+                <li>
+                    <a href="https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f/">Activation
+                        Functions - New</a>
+                </li>
+                <li>
+                    <a href="https://ruder.io/optimizing-gradient-descent/">Gradient Descent Optimization</a>
+                </li>
+                <li>
+                    <a href="https://towardsdatascience.com/understanding-learning-rates-and-how-it-improves-performance-in-deep-learning-d0d4059c1c10/">Learning
+                        Rate</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <a href="https://playground.tensorflow.org/">Playgroud</a>
+        </section>
+    </div>
+</div>
+
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {src: 'plugin/highlight/highlight.js', async: true}
+        ]
+    });
+</script>
+</body>
+</html>
